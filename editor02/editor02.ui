@@ -1,0 +1,2888 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>editor02Class</class>
+ <widget class="QMainWindow" name="editor02Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2498</width>
+    <height>1106</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Maximum" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Editor</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../Data/EditorIcons/editorIcon.png</normaloff>../Data/EditorIcons/editorIcon.png</iconset>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QDockWidget" name="waterDockWidget">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>524287</height>
+         </size>
+        </property>
+        <property name="windowTitle">
+         <string>Water settings</string>
+        </property>
+        <widget class="QWidget" name="dockWidgetContents">
+         <widget class="QLabel" name="label_26">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>81</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Water level</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="waterLevelSlider">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>161</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>-2500</number>
+          </property>
+          <property name="maximum">
+           <number>2500</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="value">
+           <number>20</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="waterLevelSpinBox">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>40</y>
+            <width>61</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>-32768</number>
+          </property>
+          <property name="maximum">
+           <number>32767</number>
+          </property>
+          <property name="value">
+           <number>20</number>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_27">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>80</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Water color</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="waterColorRSlider">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>110</y>
+            <width>141</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QSlider" name="waterColorGSlider">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>140</y>
+            <width>141</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>186</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QSlider" name="waterColorBSlider">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>170</y>
+            <width>141</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>219</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_28">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>110</y>
+            <width>21</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>R</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_29">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>140</y>
+            <width>21</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>G</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_30">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>170</y>
+            <width>21</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>B</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_10">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>110</y>
+            <width>51</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_11">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>140</y>
+            <width>51</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>186</number>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_12">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>170</y>
+            <width>51</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <number>255</number>
+          </property>
+          <property name="value">
+           <number>219</number>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_31">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>270</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Specular power</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="specularPowerSlider">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>300</y>
+            <width>161</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <number>500</number>
+          </property>
+          <property name="value">
+           <number>20</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_13">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>300</y>
+            <width>51</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <number>500</number>
+          </property>
+          <property name="value">
+           <number>20</number>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_32">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>210</y>
+            <width>101</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Water opacity</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_14">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>240</y>
+            <width>51</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+          <property name="value">
+           <number>50</number>
+          </property>
+         </widget>
+         <widget class="QSlider" name="waterOpacitySlider">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>240</y>
+            <width>161</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+          <property name="value">
+           <number>50</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDockWidget" name="snapToolDockWidget">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>200</width>
+          <height>524287</height>
+         </size>
+        </property>
+        <property name="windowTitle">
+         <string>Snap Tool</string>
+        </property>
+        <widget class="QWidget" name="dockWidgetContents_4">
+         <widget class="QLabel" name="label_22">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>61</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Grid size</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="snapToGridXValueSpinBox">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>40</y>
+            <width>61</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>1000</number>
+          </property>
+          <property name="value">
+           <number>8</number>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="snapToGridYValueSpinBox">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>70</y>
+            <width>61</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>1000</number>
+          </property>
+          <property name="value">
+           <number>8</number>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="snapToGridZValueSpinBox">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>100</y>
+            <width>61</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>1000</number>
+          </property>
+          <property name="value">
+           <number>8</number>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_23">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>40</y>
+            <width>16</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>X</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_24">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>70</y>
+            <width>16</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Y</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_25">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>100</y>
+            <width>16</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Z</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDockWidget" name="selectedObjectPropertiesDockWidget">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>524287</height>
+         </size>
+        </property>
+        <property name="windowTitle">
+         <string>Object properties</string>
+        </property>
+        <widget class="QWidget" name="dockWidgetContents_9">
+         <widget class="QLabel" name="label_20">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>61</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Position</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_21">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>70</y>
+            <width>61</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>9</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Rotation</string>
+          </property>
+         </widget>
+         <widget class="QDoubleSpinBox" name="rotationXSpinBox">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>90</y>
+            <width>62</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="decimals">
+           <number>1</number>
+          </property>
+          <property name="minimum">
+           <double>-32000.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>32000.000000000000000</double>
+          </property>
+         </widget>
+         <widget class="QDoubleSpinBox" name="rotationYSpinBox">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>90</y>
+            <width>62</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="decimals">
+           <number>1</number>
+          </property>
+          <property name="minimum">
+           <double>-32000.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>32000.000000000000000</double>
+          </property>
+         </widget>
+         <widget class="QDoubleSpinBox" name="rotationZSpinBox">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>90</y>
+            <width>62</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="decimals">
+           <number>1</number>
+          </property>
+          <property name="minimum">
+           <double>-32000.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>32000.000000000000000</double>
+          </property>
+         </widget>
+         <widget class="QDoubleSpinBox" name="positionXSpinBox">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>40</y>
+            <width>62</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="decimals">
+           <number>1</number>
+          </property>
+          <property name="minimum">
+           <double>-1000000.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>1000000.000000000000000</double>
+          </property>
+         </widget>
+         <widget class="QDoubleSpinBox" name="positionYSpinBox">
+          <property name="geometry">
+           <rect>
+            <x>90</x>
+            <y>40</y>
+            <width>62</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="decimals">
+           <number>1</number>
+          </property>
+          <property name="minimum">
+           <double>-1000000.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>1000000.000000000000000</double>
+          </property>
+         </widget>
+         <widget class="QDoubleSpinBox" name="positionZSpinBox">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>40</y>
+            <width>62</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="decimals">
+           <number>1</number>
+          </property>
+          <property name="minimum">
+           <double>-1000000.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>1000000.000000000000000</double>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="GLWidget" name="widget" native="true"/>
+      </item>
+      <item>
+       <widget class="QDockWidget" name="foliageDockWidget">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>524287</height>
+         </size>
+        </property>
+        <property name="windowTitle">
+         <string>Add Vegetation</string>
+        </property>
+        <widget class="QWidget" name="dockWidgetContents_7">
+         <widget class="QPushButton" name="addFoliagePushButton">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>20</y>
+            <width>81</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+         <widget class="QListWidget" name="foliageObjectsListWidget">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>190</y>
+            <width>111</width>
+            <height>361</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="enableBlendCheckBox">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>50</y>
+            <width>70</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Blend</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="enableCullingCheckBox">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>70</y>
+            <width>70</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Cull faces</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="deleteFoliageCheckBox">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>110</y>
+            <width>101</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Delete foliage</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="foliageBrushSizeSlider">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>150</y>
+            <width>141</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>2000</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="pageStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>500</number>
+          </property>
+          <property name="sliderPosition">
+           <number>500</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDockWidget" name="waypointDockWidget">
+        <property name="minimumSize">
+         <size>
+          <width>170</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>170</width>
+          <height>524287</height>
+         </size>
+        </property>
+        <property name="windowTitle">
+         <string>Add waypoint</string>
+        </property>
+        <widget class="QWidget" name="dockWidgetContents_3">
+         <widget class="QPushButton" name="addWaypointButton">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>50</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QListWidget" name="waypointListWidget">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>130</y>
+            <width>121</width>
+            <height>321</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_14">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>10</y>
+            <width>32</width>
+            <height>32</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>../Data/EditorIcons/ai.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_15">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>10</y>
+            <width>131</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="lineWidth">
+           <number>1</number>
+          </property>
+          <property name="text">
+           <string>Add Waypoint</string>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="addAnimatedModelToWaypointButton">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>90</y>
+            <width>111</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Add to waypoint</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDockWidget" name="paintLayersDockWidget">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>524287</height>
+         </size>
+        </property>
+        <property name="windowTitle">
+         <string>Paint layers</string>
+        </property>
+        <widget class="QWidget" name="dockWidgetContents_5">
+         <widget class="QLabel" name="label_10">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>32</width>
+            <height>32</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>../Data/EditorIcons/paintTool32.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_11">
+          <property name="geometry">
+           <rect>
+            <x>60</x>
+            <y>10</y>
+            <width>111</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="lineWidth">
+           <number>1</number>
+          </property>
+          <property name="text">
+           <string>Paint layers</string>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QSlider" name="textureRepeat_1_Slider">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>410</y>
+            <width>161</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>1024</number>
+          </property>
+          <property name="sliderPosition">
+           <number>128</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_5">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>130</y>
+            <width>61</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>200</number>
+          </property>
+          <property name="value">
+           <number>100</number>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_12">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>60</y>
+            <width>221</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Radius</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="terrainPaintBrushStrengthSlider">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>130</y>
+            <width>151</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>200</number>
+          </property>
+          <property name="value">
+           <number>100</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_13">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>110</y>
+            <width>221</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Strength</string>
+          </property>
+         </widget>
+         <widget class="QListWidget" name="terrainLayerListWidget">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>160</y>
+            <width>221</width>
+            <height>221</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>200</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_16">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>390</y>
+            <width>221</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Texture 1 repeat</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_7">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>460</y>
+            <width>61</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>1024</number>
+          </property>
+          <property name="value">
+           <number>128</number>
+          </property>
+         </widget>
+         <widget class="QSlider" name="textureRepeat_2_Slider">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>460</y>
+            <width>161</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>1024</number>
+          </property>
+          <property name="value">
+           <number>128</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_17">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>440</y>
+            <width>221</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Texture 2 repeat</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_18">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>490</y>
+            <width>221</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Texture 3 repeat</string>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_8">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>510</y>
+            <width>61</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>1024</number>
+          </property>
+          <property name="value">
+           <number>128</number>
+          </property>
+         </widget>
+         <widget class="QSlider" name="textureRepeat_3_Slider">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>510</y>
+            <width>161</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>1024</number>
+          </property>
+          <property name="value">
+           <number>128</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_6">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>400</y>
+            <width>61</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>1024</number>
+          </property>
+          <property name="value">
+           <number>128</number>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_9">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>560</y>
+            <width>61</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>1024</number>
+          </property>
+          <property name="value">
+           <number>128</number>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_4">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>80</y>
+            <width>61</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+          <property name="value">
+           <number>10</number>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_19">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>540</y>
+            <width>221</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Texture 4 repeat</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="textureRepeat_4_Slider">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>560</y>
+            <width>161</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>1024</number>
+          </property>
+          <property name="value">
+           <number>128</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QSlider" name="terrainPaintBrushRadiusSlider">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>80</y>
+            <width>151</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>100</number>
+          </property>
+          <property name="pageStep">
+           <number>1</number>
+          </property>
+          <property name="value">
+           <number>10</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDockWidget" name="addObjectsDockWidget">
+        <property name="minimumSize">
+         <size>
+          <width>150</width>
+          <height>83</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>150</width>
+          <height>524287</height>
+         </size>
+        </property>
+        <property name="windowTitle">
+         <string>Add Objects</string>
+        </property>
+        <widget class="QWidget" name="dockWidgetContents_6">
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QTabWidget" name="AddObjectsTabWidget_2">
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="tabShape">
+             <enum>QTabWidget::Rounded</enum>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tab_3">
+             <attribute name="title">
+              <string>Static</string>
+             </attribute>
+             <widget class="draglistwidget" name="staticObjectsListWidget_2">
+              <property name="geometry">
+               <rect>
+                <x>9</x>
+                <y>49</y>
+                <width>108</width>
+                <height>571</height>
+               </rect>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>911</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QCheckBox" name="addMultipleCheckBox">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>20</y>
+                <width>91</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>Add multiple</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="tab_4">
+             <attribute name="title">
+              <string>Animated</string>
+             </attribute>
+             <widget class="draglistwidget" name="animatedModelListWidget">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>21</y>
+                <width>111</width>
+                <height>401</height>
+               </rect>
+              </property>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDockWidget" name="settingsDockWidget">
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>524287</height>
+         </size>
+        </property>
+        <property name="windowTitle">
+         <string>Settings</string>
+        </property>
+        <widget class="QWidget" name="dockWidgetContents_2">
+         <widget class="QLabel" name="label_5">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>10</y>
+            <width>81</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="lineWidth">
+           <number>1</number>
+          </property>
+          <property name="text">
+           <string>Settings</string>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_6">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>41</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>../Data/EditorIcons/settingsIcon32.png</pixmap>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>60</y>
+            <width>131</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Terrain View distance</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="terrainViewDistanceSlider">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>80</y>
+            <width>221</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="maximum">
+           <number>100000</number>
+          </property>
+          <property name="value">
+           <number>22000</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_8">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>110</y>
+            <width>111</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Camera speed</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="cameraSpeedSlider">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>130</y>
+            <width>221</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>100</number>
+          </property>
+          <property name="maximum">
+           <number>10000</number>
+          </property>
+          <property name="singleStep">
+           <number>1</number>
+          </property>
+          <property name="value">
+           <number>1000</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_9">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>170</y>
+            <width>61</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Render</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="renderTerrainCheckBox">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>190</y>
+            <width>70</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Terrain</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="renderWaterCheckBox">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>210</y>
+            <width>70</width>
+            <height>17</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Water</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDockWidget" name="editTerrainDockWidget">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>38</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>250</width>
+          <height>524287</height>
+         </size>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="windowTitle">
+         <string>Edit Terrain</string>
+        </property>
+        <widget class="QWidget" name="dockWidgetContents_8">
+         <widget class="QSlider" name="terrainRadiusSlider">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>70</y>
+            <width>151</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>70</number>
+          </property>
+          <property name="pageStep">
+           <number>10</number>
+          </property>
+          <property name="value">
+           <number>10</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>0</y>
+            <width>191</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Calibri</family>
+            <pointsize>16</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="lineWidth">
+           <number>1</number>
+          </property>
+          <property name="text">
+           <string>Terrain Rise / Lower</string>
+          </property>
+          <property name="scaledContents">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>47</width>
+            <height>13</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Radius</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="terrainStrengthSlider">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>130</y>
+            <width>151</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>200</number>
+          </property>
+          <property name="value">
+           <number>100</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>110</y>
+            <width>61</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Strength</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="label_4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>170</y>
+            <width>61</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Height</string>
+          </property>
+         </widget>
+         <widget class="QSlider" name="terrainHeightSlider">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>190</y>
+            <width>151</width>
+            <height>19</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>-32768</number>
+          </property>
+          <property name="maximum">
+           <number>32768</number>
+          </property>
+          <property name="value">
+           <number>150</number>
+          </property>
+          <property name="sliderPosition">
+           <number>150</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="invertedAppearance">
+           <bool>false</bool>
+          </property>
+          <property name="invertedControls">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>70</y>
+            <width>71</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>70</number>
+          </property>
+          <property name="value">
+           <number>10</number>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_2">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>130</y>
+            <width>71</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>200</number>
+          </property>
+          <property name="value">
+           <number>100</number>
+          </property>
+         </widget>
+         <widget class="QSpinBox" name="spinBox_3">
+          <property name="geometry">
+           <rect>
+            <x>170</x>
+            <y>190</y>
+            <width>71</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <property name="minimum">
+           <number>-32768</number>
+          </property>
+          <property name="maximum">
+           <number>32768</number>
+          </property>
+          <property name="value">
+           <number>150</number>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2498</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionNew_level"/>
+    <addaction name="actionLoad_level"/>
+    <addaction name="actionSave_level"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuRender_States">
+    <property name="title">
+     <string>Render States</string>
+    </property>
+    <widget class="QMenu" name="menuFill_Mode">
+     <property name="title">
+      <string>Fill Mode</string>
+     </property>
+     <addaction name="actionSolid"/>
+     <addaction name="actionWireframe"/>
+    </widget>
+    <addaction name="menuFill_Mode"/>
+   </widget>
+   <widget class="QMenu" name="menuTerrain">
+    <property name="title">
+     <string>Terrain</string>
+    </property>
+    <addaction name="actionFilter"/>
+    <addaction name="actionCook"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionObject_properties"/>
+    <addaction name="actionSnap_tool"/>
+    <addaction name="actionStatistic"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuRender_States"/>
+   <addaction name="menuTerrain"/>
+   <addaction name="menuView"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionModifyTerrain"/>
+   <addaction name="actionPaintTerrain"/>
+   <addaction name="actionAddObjects"/>
+   <addaction name="actionWater"/>
+   <addaction name="actionAddAIPath"/>
+   <addaction name="actionAddFoliage"/>
+   <addaction name="separator"/>
+   <addaction name="actionSelectTool"/>
+   <addaction name="actionMoveTool"/>
+   <addaction name="actionRotationTool"/>
+   <addaction name="separator"/>
+   <addaction name="actionPlay"/>
+   <addaction name="actionSettings"/>
+   <addaction name="actionSnap_to_grid"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="infoDockWidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>145</width>
+     <height>200</height>
+    </size>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_12">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTabWidget" name="tabWidget">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="tabShape">
+        <enum>QTabWidget::Triangular</enum>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tab">
+        <attribute name="title">
+         <string>Tab 1</string>
+        </attribute>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QTextBrowser" name="logTextBrowser">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="tab_2">
+        <attribute name="title">
+         <string>Tab 2</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="actionSolid">
+   <property name="text">
+    <string>Solid</string>
+   </property>
+  </action>
+  <action name="actionWireframe">
+   <property name="text">
+    <string>Wireframe</string>
+   </property>
+  </action>
+  <action name="actionFilter">
+   <property name="text">
+    <string>Filter</string>
+   </property>
+  </action>
+  <action name="actionPaintTerrain">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Data/EditorIcons/paintTool32.png</normaloff>../Data/EditorIcons/paintTool32.png</iconset>
+   </property>
+   <property name="text">
+    <string>PaintTerrain</string>
+   </property>
+   <property name="shortcut">
+    <string>2</string>
+   </property>
+  </action>
+  <action name="actionModifyTerrain">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Data/EditorIcons/terrainTool.png</normaloff>../Data/EditorIcons/terrainTool.png</iconset>
+   </property>
+   <property name="text">
+    <string>ModifyTerrain</string>
+   </property>
+   <property name="shortcut">
+    <string>1</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Data/EditorIcons/settingsIcon32.png</normaloff>../Data/EditorIcons/settingsIcon32.png</iconset>
+   </property>
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionCook">
+   <property name="text">
+    <string>Cook</string>
+   </property>
+  </action>
+  <action name="actionSelectTool">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Data/EditorIcons/selectTool.png</normaloff>../Data/EditorIcons/selectTool.png</iconset>
+   </property>
+   <property name="text">
+    <string>SelectTool</string>
+   </property>
+   <property name="toolTip">
+    <string>Select object</string>
+   </property>
+   <property name="shortcut">
+    <string>Z</string>
+   </property>
+  </action>
+  <action name="actionMoveTool">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Data/EditorIcons/moveTool.png</normaloff>../Data/EditorIcons/moveTool.png</iconset>
+   </property>
+   <property name="text">
+    <string>MoveTool</string>
+   </property>
+   <property name="toolTip">
+    <string>Move object</string>
+   </property>
+   <property name="shortcut">
+    <string>T</string>
+   </property>
+  </action>
+  <action name="actionRotationTool">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Data/EditorIcons/rotateTool.png</normaloff>../Data/EditorIcons/rotateTool.png</iconset>
+   </property>
+   <property name="text">
+    <string>RotationTool</string>
+   </property>
+   <property name="toolTip">
+    <string>Rotate object</string>
+   </property>
+   <property name="shortcut">
+    <string>R</string>
+   </property>
+  </action>
+  <action name="actionAddObjects">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Data/EditorIcons/addObjectsIcon.png</normaloff>../Data/EditorIcons/addObjectsIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>addObjects</string>
+   </property>
+   <property name="toolTip">
+    <string>Add objects</string>
+   </property>
+  </action>
+  <action name="actionAddAIPath">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Data/EditorIcons/ai.png</normaloff>../Data/EditorIcons/ai.png</iconset>
+   </property>
+   <property name="text">
+    <string>addAIPath</string>
+   </property>
+  </action>
+  <action name="actionNew_level">
+   <property name="text">
+    <string>New level</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAddFoliage">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Data/EditorIcons/Plants-Sproud-icon.png</normaloff>../Data/EditorIcons/Plants-Sproud-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>addFoliage</string>
+   </property>
+  </action>
+  <action name="actionPlay">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Data/EditorIcons/play-icon.png</normaloff>../Data/EditorIcons/play-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Play</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="actionLoad_level">
+   <property name="text">
+    <string>Load level</string>
+   </property>
+  </action>
+  <action name="actionSave_level">
+   <property name="text">
+    <string>Save level</string>
+   </property>
+  </action>
+  <action name="actionSnap_to_grid">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Data/EditorIcons/Magnet-icon.png</normaloff>../Data/EditorIcons/Magnet-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Snap to grid</string>
+   </property>
+   <property name="toolTip">
+    <string>Snap to grid</string>
+   </property>
+  </action>
+  <action name="actionObject_properties">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Object properties</string>
+   </property>
+  </action>
+  <action name="actionSnap_tool">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Snap tool</string>
+   </property>
+  </action>
+  <action name="actionWater">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../Data/EditorIcons/Industry-Water-icon.png</normaloff>../Data/EditorIcons/Industry-Water-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Water</string>
+   </property>
+   <property name="toolTip">
+    <string>Water settings</string>
+   </property>
+  </action>
+  <action name="actionStatistic">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Statistic</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>GLWidget</class>
+   <extends>QWidget</extends>
+   <header>glwidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>draglistwidget</class>
+   <extends>QListWidget</extends>
+   <header>draglistwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="editor02.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>terrainRadiusSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>2398</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2478</x>
+     <y>178</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>terrainStrengthSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_2</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>2398</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2478</x>
+     <y>238</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>terrainHeightSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_3</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>2398</x>
+     <y>295</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2478</x>
+     <y>298</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_3</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>terrainHeightSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>2478</x>
+     <y>298</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2398</x>
+     <y>295</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_2</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>terrainStrengthSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>2478</x>
+     <y>238</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2398</x>
+     <y>235</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>terrainRadiusSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>2478</x>
+     <y>178</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>2398</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>terrainPaintBrushRadiusSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_4</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1730</x>
+     <y>185</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1810</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_4</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>terrainPaintBrushRadiusSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1810</x>
+     <y>186</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1730</x>
+     <y>185</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>terrainPaintBrushStrengthSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_5</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1730</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1810</x>
+     <y>236</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_5</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>terrainPaintBrushStrengthSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1810</x>
+     <y>236</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1730</x>
+     <y>235</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>textureRepeat_1_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_6</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1740</x>
+     <y>515</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1810</x>
+     <y>506</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_6</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>textureRepeat_1_Slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1810</x>
+     <y>506</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1740</x>
+     <y>515</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>textureRepeat_2_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_7</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1740</x>
+     <y>565</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1810</x>
+     <y>566</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_7</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>textureRepeat_2_Slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1810</x>
+     <y>566</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1740</x>
+     <y>565</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>textureRepeat_3_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_8</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1740</x>
+     <y>615</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1810</x>
+     <y>616</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_8</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>textureRepeat_3_Slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1810</x>
+     <y>616</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1740</x>
+     <y>615</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>textureRepeat_4_Slider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_9</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1740</x>
+     <y>665</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1810</x>
+     <y>666</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_9</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>textureRepeat_4_Slider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1810</x>
+     <y>666</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1740</x>
+     <y>665</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>waterLevelSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>waterLevelSpinBox</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>143</x>
+     <y>130</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>203</x>
+     <y>140</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>waterLevelSpinBox</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>waterLevelSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>209</x>
+     <y>129</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>168</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>waterColorRSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_10</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>177</x>
+     <y>208</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>205</x>
+     <y>208</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_10</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>waterColorRSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>199</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>171</x>
+     <y>201</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>waterColorGSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_11</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>174</x>
+     <y>239</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>201</x>
+     <y>239</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_11</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>waterColorGSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>200</x>
+     <y>230</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>173</x>
+     <y>233</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>waterColorBSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_12</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>173</x>
+     <y>266</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>190</x>
+     <y>272</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_12</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>waterColorBSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>201</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>175</x>
+     <y>263</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>specularPowerSlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_13</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>164</x>
+     <y>406</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>208</x>
+     <y>408</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_13</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>specularPowerSlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>221</x>
+     <y>408</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>180</x>
+     <y>406</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>waterOpacitySlider</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>spinBox_14</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>174</x>
+     <y>328</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>192</x>
+     <y>341</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>spinBox_14</sender>
+   <signal>valueChanged(int)</signal>
+   <receiver>waterOpacitySlider</receiver>
+   <slot>setValue(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>202</x>
+     <y>331</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>174</x>
+     <y>335</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
